@@ -1,7 +1,6 @@
 import React from 'react';
-import "./Header.css";
 
-export const Header = () => {
+const Header = () => {
     return (
         <>
          <div class="main-navbar sticky-top bg-white">
@@ -81,3 +80,5 @@ export const Header = () => {
         </>
     )
 }
+
+export default Header;
