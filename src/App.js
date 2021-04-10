@@ -7,7 +7,9 @@ function App() {
     <div className="container-fluid">
       <div className="row">
           <Sidebar />
-          <Header />
+          <main className="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+            <Header />
+          </main>
       </div>
     </div>
   )
