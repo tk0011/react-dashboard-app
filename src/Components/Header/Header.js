@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Header = () => {
+const Header = () => {
     return (
         <>
          <div class="main-navbar sticky-top bg-white">
