@@ -1,9 +1,13 @@
+import React from 'react';
+import Sidebar from './Components/Sidebar/Sidebar.js';
+
 function App() {
   return (
-    <>
-        <h1>React Dashboard App</h1>
-    </>
-  );
+    <div className="container-fluid">
+      <div className="row">
+          <Sidebar />
+      </div>
+    </div>
+  )
 }
-
 export default App;
