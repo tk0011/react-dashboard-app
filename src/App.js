@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Header from './Components/Header/Header';
+import Blogpost from './Pages/BlogPost/BlogPost';
 
 function App() {
   return (
