@@ -1,7 +1,7 @@
 import React from 'react';
 import BlogCard from '../../Components/BlogCard/BlogCard';
 
-const Blogpost = () => {
+const BlogPost = () => {
     return (
         <div class="main-content-container container-fluid px-4">
             <div class="page-header row no-gutters py-4">
@@ -20,4 +20,4 @@ const Blogpost = () => {
     )
 }
 
-export default Blogpost
+export default BlogPost;
