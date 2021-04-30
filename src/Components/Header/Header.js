@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -9,7 +10,6 @@ const Header = () => {
                 <div class="input-group input-group-seamless ml-3">
                   <div class="input-group-prepend">
                     <div class="input-group-text">
-                      
                       <i class="fas fa-search"></i>
                     </div>
                   </div>
@@ -18,14 +18,14 @@ const Header = () => {
               </form>
               <ul class="navbar-nav border-left flex-row ">
                 <li class="nav-item border-right dropdown notifications">
-                  <a class="nav-link nav-link-icon text-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <Link class="nav-link nav-link-icon text-center" to="/" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div class="nav-link-icon__wrapper">
                       <i class="material-icons">&#xE7F4;</i>
                       <span class="badge badge-pill badge-danger">2</span>
                     </div>
-                  </a>
+                  </Link>
                   <div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="#">
+                    <Link class="dropdown-item" to="/">
                       <div class="notification__icon-wrapper">
                         <div class="notification__icon">
                           <i class="material-icons">&#xE6E1;</i>
@@ -36,8 +36,8 @@ const Header = () => {
                         <p>Your website’s active users count increased by
                           <span class="text-success text-semibold">28%</span> in the last week. Great job!</p>
                       </div>
-                    </a>
-                    <a class="dropdown-item" href="#">
+                    </Link>
+                    <Link class="dropdown-item" to="/">
                       <div class="notification__icon-wrapper">
                         <div class="notification__icon">
                           <i class="material-icons">&#xE8D1;</i>
@@ -48,32 +48,32 @@ const Header = () => {
                         <p>Last week your store’s sales count decreased by
                           <span class="text-danger text-semibold">5.52%</span>. It could have been worse!</p>
                       </div>
-                    </a>
-                    <a class="dropdown-item notification__all text-center" href="#"> View all Notifications </a>
+                    </Link>
+                    <Link class="dropdown-item notification__all text-center" to="/"> View all Notifications </Link>
                   </div>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                  <Link class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" to="/" role="button" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-user"></i>
                     <span class="d-none d-md-inline-block">Sierra Brooks</span>
-                  </a>
+                  </Link>
                   <div class="dropdown-menu dropdown-menu-small">
-                    <a class="dropdown-item" href="user-profile-lite.html">
-                      <i class="material-icons">&#xE7FD;</i> Profile</a>
-                    <a class="dropdown-item" href="components-blog-posts.html">
-                      <i class="material-icons">vertical_split</i> Blog Posts</a>
-                    <a class="dropdown-item" href="add-new-post.html">
-                      <i class="material-icons">note_add</i> Add New Post</a>
+                    <Link class="dropdown-item" to="/">
+                      <i class="material-icons">&#xE7FD;</i> Profile</Link>
+                    <Link class="dropdown-item" to="/">
+                      <i class="material-icons">vertical_split</i> Blog Posts</Link>
+                    <Link class="dropdown-item" to="/">
+                      <i class="material-icons">note_add</i> Add New Post</Link>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-danger" href="#">
-                      <i class="material-icons text-danger">&#xE879;</i> Logout </a>
+                    <Link class="dropdown-item text-danger" to="/">
+                      <i class="material-icons text-danger">&#xE879;</i> Logout </Link>
                   </div>
                 </li>
               </ul>
               <nav class="nav">
-                <a href="#" class="nav-link nav-link-icon toggle-sidebar d-md-inline d-lg-none text-center border-left" data-toggle="collapse" data-target=".header-navbar" aria-expanded="false" aria-controls="header-navbar">
+                <Link to="/" class="nav-link nav-link-icon toggle-sidebar d-md-inline d-lg-none text-center border-left" data-toggle="collapse" data-target=".header-navbar" aria-expanded="false" aria-controls="header-navbar">
                   <i class="material-icons">&#xE5D2;</i>
-                </a>
+                </Link>
               </nav>
             </nav>
           </div>   
