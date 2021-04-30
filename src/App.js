@@ -1,8 +1,11 @@
 import React from 'react';
+import {Switch, Route} from 'react-router-dom';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Header from './Components/Header/Header';
-import {Switch, Route } from 'react-router-dom'
 import AddPost from './Pages/AddPost/AddPost';
+import BlogPost from './Pages/BlogPost/BlogPost';
+import UserProfile from './Pages/UserProfile/UserProfile';
+
 
 function App() {
   return (
@@ -15,7 +18,13 @@ function App() {
                     <Route exact path="/add-post">
                         <AddPost/>
                     </Route>
-                 </Switch>
+                    <Route exact path="/blog">
+                        <BlogPost />
+                    </Route>
+                    <Route exact path="/profile">
+                        <UserProfile />
+                    </Route>
+                </Switch>
             </main>
       </div>
     </div>
